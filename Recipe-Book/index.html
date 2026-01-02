@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Recipe Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Recipe Book</h1>
+
+    <form id="recipeForm">
+        <input type="text" id="title" placeholder="Recipe Title">
+        <textarea id="ingredients" placeholder="Ingredients"></textarea>
+        <textarea id="instructions" placeholder="Instructions"></textarea>
+        <select id="cuisine">
+            <option value="">Select Cuisine</option>
+            <option>Indian</option>
+            <option>Chinese</option>
+            <option>Italian</option>
+            <option>Mexican</option>
+        </select>
+        <button type="submit">Add Recipe</button>
+    </form>
+
+    <div class="search-box">
+        <input type="text" id="searchText" placeholder="Search by title or ingredient">
+        <select id="filterCuisine">
+            <option value="">All Cuisines</option>
+            <option>Indian</option>
+            <option>Chinese</option>
+            <option>Italian</option>
+            <option>Mexican</option>
+        </select>
+    </div>
+
+    <div id="recipeList"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
